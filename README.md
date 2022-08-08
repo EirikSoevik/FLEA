@@ -1,17 +1,28 @@
-#Fish Locomotion Extraction Analysis
+# Fish Locomotion Extraction Analysis
 
-AI is used to automatically extract the outline of fish from input videos, after which a midline is extracted and subsequently analysed. 
+FLEA is a tool allowing scientists to extract midlines from videos of swimming fish using deep learning. This is done by finding the fish outline, extracting the midlines and analysing the results. AI is used to automatically extract the outline.
 
-##Input:
+
+## Input:
 - video of fish swimming. Must be filmed from above, and move along the x-axis. 
 
-##Output:
+## Output:
 - frequency spectrum using FFT, with dominating frequency
 - travelling index
-- midline movement for a _ set of 20 points, in time and space
+- midline movement for a predetermined set of 20 points, in time and space (size can be changed)
 
-##Features:
+## Features:
 - Deep learning using Detectron2, which is MetaAI's state of the art deep learning network.
 - CUDA compatible - utilize your graphics card to greatly reduce computation time. In the authors own case, training of a model was 17 times faster with the GPU than with CPU
 - CPU compatible - for those who can't or don't want to spend the time optimizing for GPU support
 - 
+
+## Planned improvements
+- added mass identification, so that locomotion can be decomposed into two parts, one from the added mass and one without
+
+
+## Use
+
+1. Use inference.py to find segmentation masks for each frame 
+2. Use midline_extraction.py to extract the midlines from each frame
+3. Use midline_analysis.py to analyse the midlines
