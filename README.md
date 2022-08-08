@@ -1,3 +1,5 @@
+Still a work in progress, this repository is not operational just yet...
+
 # Fish Locomotion Extraction Analysis
 
 FLEA is a tool allowing scientists to extract midlines from videos of swimming fish using deep learning in python. This is done by finding the fish outline, extracting the midlines and analysing the results. AI is used to automatically extract the outline.
