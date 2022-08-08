@@ -20,3 +20,5 @@ Using deep learning requires many modules and packages which can be tedious and 
 
 
 # See the wiki for more in-depth guides on installation and use
+https://github.com/EirikSoevik/FLEA/wiki
+
