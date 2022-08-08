@@ -2,7 +2,7 @@
 
 FLEA is a tool allowing scientists to extract midlines from videos of swimming fish using deep learning in python. This is done by finding the fish outline, extracting the midlines and analysing the results. AI is used to automatically extract the outline.
 
-# Download dockerimages for easy installation and use
+## Download docker images for easy installation and use
 
 Using deep learning requires many modules and packages which can be tedious and difficult to download in a matching set. Different hardware might require different versions, making installation hard. Therefore, several docker images will be made available for download so that one needs only identify the CUDA compatibility of one's own PC before downloading a correspoding image. Alternatively, a CPU version will also be made available. 
 
